@@ -33,3 +33,25 @@ This project focuses on classifying credit applications as "Good" or "Bad" clien
 - **Languages and Libraries:** R programming, `randomForest`, `ggplot2`, `caret`, and other essential data analysis libraries.
 
 ------------------------------------------------------------------------------------------------------------
+# Dry Bean Classification Using Decision Tree
+
+## Summary
+
+This project focuses on classifying seven different types of dry beans—Seker, Barbunya, Bombay, Cali, Dermosan, Horoz, and Sira—using a Decision Tree classifier. The classification is based on 16 features extracted from high-resolution images, which describe the form, shape, and structure of the beans.
+
+### Model Details
+- **Model**: Decision Tree Classifier
+- **Libraries Used**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `graphviz`
+- **Key Metrics**: Accuracy, Precision, Recall, F1-score
+
+### Dataset
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Dry+Bean+Dataset#)
+- **Instances**: 13,611 dry bean samples
+- **Features**: 16 (Area, Perimeter, Axis Lengths, Aspect Ratio, Eccentricity, Convex Area, etc.)
+- **Classes**: 7 bean types
+
+### Results
+The Decision Tree model successfully classifies the different types of dry beans with notable accuracy. Detailed performance metrics such as precision, recall, and F1-score are provided, along with visualizations of the decision tree.
+
+------------------------------------------------------------------------------------------------------------
+
