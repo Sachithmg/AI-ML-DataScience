@@ -206,6 +206,73 @@ This repository contains a critical review of the paper "AttnGAN: Fine-Grained T
 
 ---------------------------------------------------------------------------------------------------------------
 
+# Face Mask Recognition System using CNN
+
+## Overview
+This repository contains the code and resources for the Face Mask Recognition System using Convolutional Neural Networks (CNN). The project aims to develop a robust system capable of detecting whether individuals are wearing face masks in various real-world scenarios with different lighting conditions.
+
+## Research Questions
+The study addresses the following key research questions:
+1. How do varying lighting conditions in real-world scenarios impact the accuracy of face mask detection models trained on synthetic data?
+2. What preprocessing techniques can enhance the accuracy of face mask detection models in real-world scenarios?
+3. Which transfer learning architectures yield the best face mask detection outcomes in diverse real-world settings?
+
+## Methodology
+The research methodology involves:
+- Training CNN models on synthetic datasets.
+- Evaluating the models on a test dataset representing real-world lighting conditions (e.g., sunny, cloudy, shadowy, indoor, outdoor artificial light).
+- Experimenting with various preprocessing techniques such as sharpness enhancement and face elongation.
+- Comparing the performance of different transfer learning architectures including VGG-16, VGG-19, ResNet, DenseNet, and MobileNet.
+
+## Key Findings
+- Models trained on synthetic data often struggle with real-world scenarios, especially under varying lighting conditions.
+- Preprocessing techniques like sharpness enhancement can improve model accuracy in real-world scenarios.
+- DenseNet and ResNet architectures demonstrated superior performance in feature extraction under challenging conditions.
+
+## Recommendations
+Future work should focus on:
+- Exploring advanced preprocessing techniques.
+- Implementing diverse data augmentation strategies.
+- Optimizing transfer learning methods to better adapt models to real-world environments.
+- Investigating ensemble methods to enhance overall accuracy.
+
+-----------------------------------------------------------------------------------------------------------
+
+# Deep Learning and Computer Vision for Image Text Detection and Recognition
+
+## Overview
+This project addresses a critical gap in the field of text detection and recognition by integrating advanced deep learning and computer vision techniques. The focus is on detecting and recognizing text within complex documents that include various structures like tables, lists, paragraphs, and headings. The project employs a combination of Optical Word Recognition (OWR) pipeline, machine learning models, and computer vision methods to enhance text detection and recognition accuracy, especially in documents distorted by skewness and tilt.
+
+## Key Features
+- **Text Detection and Recognition Pipeline:** A comprehensive pipeline covering preprocessing, segmentation, word recognition, and postprocessing.
+- **Preprocessing Techniques:** Utilizes methods like Hough Transformation, Fast Fourier Transformation (FFT), and Convolutional Neural Networks (CNN) for correcting skewness and tilt.
+- **Segmentation:** Identifies and processes tabular and non-tabular data structures, and further segments them into lines and words.
+- **Optical Word Recognition (OWR):** Employs Convolutional Recurrent Neural Network (CRNN) for high-accuracy word recognition.
+- **Data Management:** Integrates a normalized Entity-Relationship (ER) model stored in a MySQL database to manage course descriptor (CD) information.
+
+## Methodology
+The project adopts a Design Science Research Methodology, involving the development of four primary artifacts:
+1. **Data Model:** A normalized ER schema to store and retrieve CD content.
+2. **Ground Truth Generation Tool:** Extracts and processes text from PDF documents.
+3. **Input Dataset Creation:** Generates a dataset with skewed and tilted images for model training.
+4. **OWR Pipeline:** Implements the entire detection and recognition process.
+
+## Evaluation
+The pipeline was evaluated using metrics such as Mean Squared Error (MSE), confusion matrix, letter accuracy, and Connectionist Temporal Classification (CTC) loss for CRNN models. The OWR model showed promising results, with a sentence-matching ratio of 0.79 for undistorted images and 0.48 for distorted ones.
+
+## Future Work
+- **Dataset Expansion:** Expanding the training dataset to include more diverse document types.
+- **OCR Model Integration:** Integrating OCR models to handle non-dictionary words and enhance overall recognition accuracy.
+
+## Acknowledgements
+This project was completed as part of the Master of Information Technology program at Whitireia & WelTec Education Institute, Wellington, New Zealand. Special thanks to the supervisors and mentors who provided guidance and support throughout the research.
+
+## Keywords
+Deep Learning, Computer Vision, Text Detection, Text Recognition, Image Processing, Optical Character Recognition (OCR), Convolutional Neural Network (CNN), Recurrent Neural Network (RNN), Design Science Research, Entity-Relationship Model.
+
+---------------------------------------------------------------------------------------------------------------
+
+
 
 
 
