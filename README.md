@@ -129,6 +129,39 @@ This project demonstrates the effectiveness of Transfer Learning in computer vis
 
 ----------------------------------------------------------------------------------------------------------------------------
 
+# Comparison of Bi-LSTM with Index, Word2Vec, GloVe Embedding, and BERT
+
+## Overview
+This project explores and compares the performance of various natural language processing models for tweet classification, specifically focusing on health-related tweets. The models compared include Bi-LSTM with different embeddings (Index, Word2Vec, GloVe) and BERT.
+
+## Dataset
+The dataset comprises tweets labeled as personal health mentions (1) or non-personal health mentions (0). After removing duplicates and handling imbalances through upsampling, the dataset was split into training and testing sets.
+
+## Objective
+1. Develop a sequence/RNN model (LSTM or Bi-LSTM) for classifying tweets.
+2. Perform a comprehensive comparison between different models and embeddings.
+
+## Methodology
+- **Bi-LSTM with Index Embedding:** A Bi-LSTM model was optimized using Keras tuner, which was then compared with models using other embeddings.
+- **Word2Vec Embedding:** Evaluated using a similar Bi-LSTM model architecture.
+- **GloVe Embedding:** Employed transfer learning with GloVe embeddings for tweet classification.
+- **BERT:** Utilized transformers with BERT for superior performance in tweet classification.
+
+## Results Summary
+- **BERT:** Achieved the highest performance with a validation accuracy of 0.9169 and test accuracy of 0.8645, along with an AUC of 0.923.
+- **GloVe Embedding:** Followed as the runner-up with a validation accuracy of 0.8934, test accuracy of 0.8240, and an AUC of 0.892.
+- **Bi-LSTM with Index Embedding:** Showed a solid performance with a validation accuracy of 0.9040, test accuracy of 0.8010, and an AUC of 0.844.
+- **Word2Vec Embedding:** Underperformed relative to expectations, with a validation accuracy of 0.8003, test accuracy of 0.6597, and an AUC of 0.779.
+
+## Exploratory Data Analysis (EDA)
+Detailed EDA was conducted, including data duplication checks, distribution analysis, cleanup, and visualization, followed by a training-validation data split.
+
+## Conclusion
+The BERT model outperforms the other models in this study, but the potential for improvement remains with the addition of more data and further model refinement.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
