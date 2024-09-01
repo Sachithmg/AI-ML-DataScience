@@ -54,4 +54,37 @@ This project focuses on classifying seven different types of dry beans—Seker, 
 The Decision Tree model successfully classifies the different types of dry beans with notable accuracy. Detailed performance metrics such as precision, recall, and F1-score are provided, along with visualizations of the decision tree.
 
 ------------------------------------------------------------------------------------------------------------
+# Classical Machine Learning with Scikit-Learn for SVM | RF | KNN
+
+## Summary
+
+This project showcases the implementation and performance comparison of three classical machine learning models: Support Vector Machine (SVM), Random Forest (RF), and K-Nearest Neighbour (KNN). The models are applied to multiple datasets, including:
+
+1. **Early Stage Diabetes Risk Prediction Dataset**
+2. **Breast Cancer Wisconsin (Diagnostic) Dataset**
+3. **Wine Dataset**
+
+### Model Details
+- **Support Vector Machine (SVM)**: Used for high-dimensional spaces and effective in cases where the number of dimensions exceeds the number of samples.
+- **Random Forest (RF)**: An ensemble method that operates by constructing a multitude of decision trees and outputting the mode of the classes.
+- **K-Nearest Neighbour (KNN)**: A non-parametric method used for classification that predicts the class of a data point based on the majority class among its k nearest neighbors.
+
+### Datasets
+- **Early Stage Diabetes Risk Prediction Dataset**: A dataset consisting of medical records of 520 patients, used to predict diabetes risk.
+- **Breast Cancer Wisconsin (Diagnostic) Dataset**: A well-known dataset containing features extracted from digitized images of breast masses, aimed at distinguishing between benign and malignant tumors.
+- **Wine Dataset**: Comprises the results of a chemical analysis of wines grown in a specific region in Italy, used to predict the type of wine.
+
+### Results
+The models performed as follows:
+- **SVM**: Generally provided high accuracy and precision, especially excelling in high-dimensional datasets.
+- **RF**: Showed robustness and good performance across all datasets, particularly effective in handling noisy data.
+- **KNN**: Performed well, especially in smaller datasets, though sensitive to noise and computationally expensive in larger datasets.
+
+These models demonstrate the effectiveness of classical machine learning techniques in various classification tasks, with each model excelling under different conditions.
+
+---------------------------------------------------------------------------------------------------------------
+
+
+## License
+This project is licensed under the MIT License.
 
