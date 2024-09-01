@@ -84,7 +84,52 @@ These models demonstrate the effectiveness of classical machine learning techniq
 
 ---------------------------------------------------------------------------------------------------------------
 
+# CNN and Transfer Learning on Leaf Disease Dataset
 
-## License
-This project is licensed under the MIT License.
+## Overview
+
+This project explores the application of Convolutional Neural Networks (CNN) and Transfer Learning to classify tea leaf diseases (White Spot, Algal Leaf, Brown Blight) using the following pre-trained networks:
+
+- ResNet50V2
+- ResNet101V2
+- VGG16
+- VGG19
+
+## Dataset
+
+The dataset consists of images representing three classes of tea leaf diseases. Initially, the dataset was used without augmentation, but later, image augmentation was applied to enhance the model's generalization ability. The final dataset distribution after augmentation is:
+
+- **Algal Leaf:** 654 images
+- **Brown Blight:** 661 images
+- **White Spots:** 826 images
+
+## Models
+
+### Model 01
+A CNN model built from scratch, optimized using Keras Tuner to determine the best architecture in terms of convolutional layers, pooling layers, fully connected layers, dropout rates, and learning rates.
+
+- **Validation Accuracy:** 0.7570
+- **Test Accuracy:** 0.7490
+
+### Model 02
+A CNN model leveraging Transfer Learning with pre-trained networks for feature extraction, followed by a redesigned fully connected layer optimized using Keras Tuner.
+
+- **Best Performance with ResNet50V2:**
+  - **Validation Accuracy:** 0.8845
+  - **Test Accuracy:** 0.8327
+
+## Key Insights
+
+1. **Transfer Learning:** Significantly improves feature extraction and accelerates the development of models with higher accuracy.
+2. **Dataset Size:** The amount of data is crucial for model performance, especially for generalization. Image augmentation is an effective strategy to enhance training data.
+
+## Conclusion
+
+This project demonstrates the effectiveness of Transfer Learning in computer vision tasks, particularly when dealing with limited datasets. The final model (Model 02 with ResNet50V2) achieved the highest accuracy, validating the importance of using advanced architectures for feature extraction in complex datasets.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
